@@ -1,0 +1,84 @@
+:root{
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 2em 1em;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    border-radius: .5em;
+    overflow: hidden;
+}
+
+.col{
+    color: #fff;
+    padding: 1.5em;
+}
+
+.col-1{
+    background: var(--brightOrange);
+}
+
+.col-2{
+    background: var(--darkCyan);
+}
+
+.col-3{
+    background: var(--veryDarkCyan);
+}
+
+.btn{
+    background: hsl(0, 0%, 95%);
+    border: 2px solid #fff;
+    border-radius: 3em;
+    padding: .5em 1em;
+    font-size: 1rem;
+}
+
+
+
+.btn-sedan{
+    color: var(--brightOrange);
+}
+
+.btn-sedan:hover{
+    background: none;
+    color: #fff;
+}
+
+.btn-suv{
+    color: var(--darkCyan);
+}
+
+.btn-suv:hover{
+    background: none;
+    color: #fff;
+}
+
+.btn-luxury{
+    color: var(--veryDarkCyan);
+}
+
+.btn-luxury:hover{
+    background: none;
+    color: #fff;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
