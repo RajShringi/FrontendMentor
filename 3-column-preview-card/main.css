@@ -41,7 +41,7 @@ body{
 }
 
 .btn{
-    background: hsl(0, 0%, 95%);
+    background: #fff;
     border: 2px solid #fff;
     border-radius: 3em;
     padding: .5em 1em;
