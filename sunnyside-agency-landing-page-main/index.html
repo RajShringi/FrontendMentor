@@ -17,9 +17,9 @@
 <body>
   <div class="navbar">
     <div class="container">
-      <a href="#">sunnyside</a>
+      <a class="logo" href="#">sunnyside</a>
       <img id = 'mobile-cta' class='mobile-menu' src="images/icon-hamburger.svg" alt="hamburger-menu">
-      <nav>
+      <nav class="container-nav">
       <img id = 'mobile-exit' class='mobile-menu-exit' src="images/icon-hamburger.svg" alt="hamburger-menu-exit">
         <ul class="links">
           <li class="current"><a href="#">About</a></li>
@@ -29,63 +29,67 @@
         </ul>
       </nav>
     </div>
-    <h1>WE ARE CREATIVES</h1>
+    <h1 class="hero-heading">WE ARE<br>CREATIVES</h1>
+    <img src="images/icon-arrow-down.svg" alt="arrow-down">
   </div>
 
   <!--About-->
   <section class="hero">
     <div class="content">
-      <h2>Transform your brand</h2>
+      <h2 class="content-heading">Transform your brand</h2>
       <p>We are a full-service creative agency specializing in helping brands grow fast. 
         Engage your clients through compelling visuals that do most of the marketing for you.</p>
       <a href="#">Learn more</a>
     </div>
-    <img src="images/desktop/image-transform.jpg" alt="Transform">
+    <img class="content-img" src="images/desktop/image-transform.jpg" alt="Transform">
   </section>
 
   <section class="hero">
     <div class="content">
-      <h2>Stand out to the right audience</h2>
+      <h2 class="content-heading">Stand out to the right audience</h2>
       <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
       <a href="#">Learn more</a>
     </div>
-    <img src="images/desktop/image-stand-out.jpg" alt="stand-out">
+    <img class="content-img" src="images/desktop/image-stand-out.jpg" alt="stand-out">
   </section>
 
   <!--services-->
   <section class="services">
-    <div class="service">
-      <h3>Graphic design</h3>
+    <div class="service ser-1">
+      <h2>Graphic design</h2>
       <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
     </div>
 
-    <div class="service">
-      <h3>Photography</h3>
+    <div class="service ser-2">
+      <h2>Photography</h2>
       <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
     </div>
   </section>
 
   <!--client testimonials-->
-  <section class=".client-testimonials">
-    <div class="client">
-      <img src="images/image-emily.jpg" alt="emily">
-      <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-      <h4>Emily R.</h4>
-      <p>Marketing Director</p>
-    </div>
-
-    <div class="client">
-      <img src="images/image-thomas.jpg" alt="emily">
-      <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
-      <h4>Thomas S.</h4>
-      <p>Chief Operating Officer</p>
-    </div>
-
-    <div class="client">
-      <img src="images/image-jennie.jpg" alt="emily">
-      <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
-      <h4>Jennie F.</h4>
-      <p>Business Owner</p>
+  <section class="client-testimonials">
+    <h3 class="client-testimonials-heading">CLIENT TESTIMONIALS</h3>
+    <div class="clients">
+      <div class="client">
+        <img class="client-img" src="images/image-emily.jpg" alt="emily">
+        <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+        <h4 class="client-name">Emily R.</h4>
+        <p class="client-profession">Marketing Director</p>
+      </div>
+  
+      <div class="client">
+        <img class="client-img" src="images/image-thomas.jpg" alt="emily">
+        <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+        <h4 class="client-name">Thomas S.</h4>
+        <p class="client-profession">Chief Operating Officer</p>
+      </div>
+  
+      <div class="client">
+        <img class="client-img" src="images/image-jennie.jpg" alt="emily">
+        <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+        <h4 class="client-name">Jennie F.</h4>
+        <p class="client-profession">Business Owner</p>
+      </div>
     </div>
   </section>
 
@@ -98,17 +102,17 @@
 
 
   <footer>
-    <p>sunnyside</p>
-    <nav>
-      <ul>
+    <h2 class="footer-heading">sunnyside</h2>
+    <nav class="footer-nav">
+      <ul class="footer-list">
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Projects</a></li>
       </ul>
     </nav>
 
-    <nav>
-      <ul>
+    <nav class="footer-nav">
+      <ul class="footer-list">
         <li><a href="#"><img src="images/icon-facebook.svg" alt="facebook"></a></li>
         <li><a href="#"><img src="images/icon-instagram.svg" alt="instagram"></a></li>
         <li><a href="#"><img src="images/icon-twitter.svg" alt="twitter"></a></li>
@@ -116,10 +120,5 @@
       </ul>
     </nav>
   </footer>
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Raj Shringi</a>.
-  </div>
 </body>
 </html>
