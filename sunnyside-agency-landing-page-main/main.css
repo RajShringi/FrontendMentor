@@ -40,7 +40,7 @@ h2{
 }
 
 p{
-   font-size: .8rem; 
+   font-size: 1rem; 
 }
 
 ul{
@@ -308,7 +308,7 @@ footer{
         color: #fff;
         padding: .5em;
         margin-right: 1em;
-        font-size: .7rem;
+        font-size: 1rem;
     }
 
     .links > li > a:hover {
@@ -345,12 +345,13 @@ footer{
         order: 1;
     }
 
-    .content-secondary-link{
-        font-size: .9rem;
-    }
     .content-primary-link{
         font-size: .9rem;
     }
+    .content-secondary-link{
+        font-size: .9rem;
+    }
+    
 
     .services{
         display: flex;
