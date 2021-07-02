@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
 
 :root{
     --Soft-red: hsl(7, 99%, 70%);
@@ -14,11 +20,6 @@
     --White: hsl(0, 0%, 100%);
 }
 
-*,
-*::before,
-*::after{
-    box-sizing: border-box;
-}
 
 body {
     background: #fff;
@@ -40,7 +41,7 @@ h2{
 }
 
 p{
-   font-size: .8rem; 
+   font-size: 1rem; 
 }
 
 ul{
@@ -104,12 +105,16 @@ a{
 .content {
     text-align: center;
     padding: 2.5em;
+}
+
+.content-transform, .content-standout{
     order: 2;
 }
 
-.content-img{
+.content-transform-img, .content-standou-img{
     order: 1;
 }
+
 
 .content-heading {
     color: var(--Very-dark-desaturated-blue)
@@ -283,6 +288,21 @@ footer{
 }
 
 @media only screen and (min-width: 500px) {
+    h2{
+        font-size: 3rem;
+    }
+
+    p{
+        font-size: 1.3rem;
+    }
+
+    .hero-heading {
+        font-size: 3rem;
+    }
+
+    .footer-heading{
+        font-size: 2rem;
+    }
     .mobile-menu, .mobile-menu-exit{
         display: none;
     }
@@ -304,11 +324,15 @@ footer{
         margin: 0;
     }
 
+    .logo{
+        font-size: 2rem;
+    }
+
     .links > li > a {
         color: #fff;
         padding: .5em;
         margin-right: 1em;
-        font-size: .7rem;
+        font-size: .9rem;
     }
 
     .links > li > a:hover {
@@ -323,39 +347,29 @@ footer{
         height: 90vh;
     }
 
-    .hero{
+    .hero {
+        display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         margin-bottom: 0;
-        justify-content: space-around;
     }
-    .content {
-        text-align: left;
+    .content-transform{
         order: 1;
     }
     
+    .content-transform-img{
+        order: 2;
+    }
+    .content {
+        width: 40%;
+    }
     .content-img{
-        max-width: 50%;
-        order: 2;
-    }
-
-    .content-standout{
-        order: 2;
-    }
-    .content-standout-img {
-        order: 1;
-    }
-
-    .content-secondary-link{
-        font-size: .9rem;
-    }
-    .content-primary-link{
-        font-size: .9rem;
+        width: 50%;
     }
 
     .services{
         display: flex;
-        justify-content: center;
-        align-items: center;
     }
     .ser-1{
         max-width: 50%;
@@ -363,14 +377,14 @@ footer{
     .ser-2{
         max-width: 50%;
     }
+
     .service{
         padding: 3em;
     }
 
     .clients{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
     .projects{
         grid-template-columns: repeat(4,1fr);
