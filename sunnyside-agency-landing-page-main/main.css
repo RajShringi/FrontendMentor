@@ -26,7 +26,7 @@ body {
     font-family: 'Barlow', sans-serif;
     line-height: 1.6;
     font-size: 18px;
-    color: var(--Very-dark-grayish-blue);
+    color: var(--Dark-grayish-blue);
 }
 
 img{
@@ -72,19 +72,21 @@ a{
 .hero-heading{
     color: white;
     font-family: 'Fraunces', serif;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .container-nav{
     display: none;
 }
 
+.links > li > a {
+    color: var(--Very-dark-desaturated-blue)
+}
+
 .container{
     display:  flex;
     justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    height: 30vh;
+    align-items: center;
 }
 
 .mobile-menu{
@@ -111,6 +113,46 @@ a{
 
 .content-heading {
     color: var(--Very-dark-desaturated-blue)
+}
+
+.content-primary-link{
+    font-family: 'Fraunces', serif;
+    color: var(--Very-dark-grayish-blue);
+    position: relative;
+    font-weight: bold;
+}
+
+.content-primary-link::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 5px;
+    background: var(--Yellow);
+    border-radius: 5px;
+    position: absolute;
+    opacity: .3;
+    bottom: 0;
+    left: 0;
+}
+
+.content-secondary-link{
+    font-family: 'Fraunces', serif;
+    color: var(--Very-dark-grayish-blue);
+    position: relative;
+    font-weight: bold;
+}
+
+.content-secondary-link::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 5px;
+    background: var(--Soft-red);
+    border-radius: 5px;
+    position: absolute;
+    opacity: .3;
+    bottom: 0;
+    left: 0;
 }
 
 /*===== services =====*/
@@ -203,4 +245,38 @@ footer{
 
 .footer-list > li > a {
     color: var(--Dark-desaturated-cyan)
+}
+
+.container-nav.menu-btn {
+    display: block;
+}
+.container-nav{
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background: #fff;
+    padding: 1em;
+}
+
+.links > li > a {
+    color: var(--Very-dark-grayish-blue);
+    display: block;
+    padding: .5em;
+    text-align: right;
+}
+
+.links{
+    margin-top: 2em;
+}
+
+.links > li > a:hover {
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.mobile-menu-exit {
+    float: right;
+    cursor: pointer;
 }

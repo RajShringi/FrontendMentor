@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="main.css">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
@@ -20,7 +20,7 @@
       <a class="logo" href="#">sunnyside</a>
       <img id = 'mobile-cta' class='mobile-menu' src="images/icon-hamburger.svg" alt="hamburger-menu">
       <nav class="container-nav">
-      <img id = 'mobile-exit' class='mobile-menu-exit' src="images/icon-hamburger.svg" alt="hamburger-menu-exit">
+        <i id="mobile-exit" class="fas fa-times mobile-menu-exit"></i>
         <ul class="links">
           <li class="current"><a href="#">About</a></li>
           <li><a href="#">Services</a></li>
@@ -39,7 +39,7 @@
       <h2 class="content-heading">Transform your brand</h2>
       <p>We are a full-service creative agency specializing in helping brands grow fast. 
         Engage your clients through compelling visuals that do most of the marketing for you.</p>
-      <a href="#">Learn more</a>
+      <a class="content-primary-link" href="#">LEARN MORE</a>
     </div>
     <img class="content-img" src="images/desktop/image-transform.jpg" alt="Transform">
   </section>
@@ -48,7 +48,7 @@
     <div class="content">
       <h2 class="content-heading">Stand out to the right audience</h2>
       <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
-      <a href="#">Learn more</a>
+      <a class="content-secondary-link" href="#">LEARN MORE</a>
     </div>
     <img class="content-img" src="images/desktop/image-stand-out.jpg" alt="stand-out">
   </section>
@@ -120,5 +120,19 @@
       </ul>
     </nav>
   </footer>
+
+  <script>
+    const mobileBtn = document.querySelector('.mobile-menu')
+            navigation = document.querySelector('.container-nav')
+            mobileBtnExit = document.querySelector('#mobile-exit')
+
+    mobileBtn.addEventListener('click', () => {
+      navigation.classList.add('menu-btn');
+    });
+
+    mobileBtnExit.addEventListener('click', () => {
+      navigation.classList.remove('menu-btn');
+    });
+  </script>
 </body>
 </html>
