@@ -332,7 +332,7 @@ footer{
         color: #fff;
         padding: .5em;
         margin-right: 1em;
-        font-size: .9rem;
+        font-size: 1rem;
     }
 
     .links > li > a:hover {
@@ -361,12 +361,28 @@ footer{
     .content-transform-img{
         order: 2;
     }
-    .content {
+
+    .content-standout{
+        order: 2;
+    }
+    .content-standout-img {
+        order: 1;
+    }
+
+    .content{
         width: 40%;
     }
-    .content-img{
+    .content-img {
         width: 50%;
     }
+
+    .content-primary-link{
+        font-size: .9rem;
+    }
+    .content-secondary-link{
+        font-size: .9rem;
+    }
+    
 
     .services{
         display: flex;
